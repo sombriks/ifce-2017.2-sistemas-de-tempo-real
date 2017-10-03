@@ -3,6 +3,8 @@
 
 void *threadA(void *params) {
 
+  printf("thread A started\n");
+
   par_t* p = (par_t*) params;
 
   int len = p->len;
@@ -14,10 +16,14 @@ void *threadA(void *params) {
     array[i] = letra;
     i += 3;
   }
+  
+  printf("thread A finished\n");
   return NULL;
 }
 
 void *threadB(void *params) {
+  
+  printf("thread B started\n");
   
   par_t* p = (par_t*) params;
 
@@ -30,10 +36,14 @@ void *threadB(void *params) {
     array[i] = letra;
     i += 3;
   }
+  
+  printf("thread B finished\n");
   return NULL;
 }
 
 void *threadC(void *params) {
+  
+  printf("thread C started\n");
 
   par_t* p = (par_t*) params;
   
@@ -47,10 +57,14 @@ void *threadC(void *params) {
     i += 3;
   }
   printArray(array, len);
+  
+  printf("thread C finished\n");
   return NULL;
 }
 
 void printArray(char *array, int len) {
+  
+  printf("printing array\n");
   
   int i = -1;
   printf("\n");
