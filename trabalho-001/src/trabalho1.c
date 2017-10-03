@@ -58,4 +58,5 @@ void printArray(char *array, int len) {
     printf("%c", array[i]);
   }
   printf("\n");
+  printf("\n");
 }

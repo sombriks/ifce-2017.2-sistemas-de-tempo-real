@@ -1,4 +1,11 @@
 
+#######################################
+#
+# para compilar chamar make all na linha de comando
+# espera-se gcc, make e um sistema unix-compatible 
+#
+#######################################
+
 CFLAGS=-Wall
 LDFLAGS=-Wall
 
@@ -11,5 +18,5 @@ trabalho1: main.o trabalho1.o
 
 all: trabalho1
 
-clean:
+clean: all
 	rm -f trabalho1 *.o

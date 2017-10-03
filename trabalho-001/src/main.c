@@ -3,6 +3,8 @@
 
 int main(int argc, char** argv) {
 
+  printf("process start\n");
+
   pthread_t thread_a, thread_b, thread_c;
   struct par p;
 
@@ -13,5 +15,10 @@ int main(int argc, char** argv) {
   pthread_create(&thread_b, NULL, threadB, &p);
   pthread_create(&thread_c, NULL, threadC, &p);
 
-  return 42;
+  pthread_join(thread_a,NULL);
+  pthread_join(thread_b,NULL);
+  pthread_join(thread_c,NULL);
+
+  printf("process end\n");
+  return 0;
 }
