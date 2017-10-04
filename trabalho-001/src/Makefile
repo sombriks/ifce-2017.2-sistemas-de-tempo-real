@@ -1,16 +1,19 @@
 
 ##############################################################################
-#
-# @author sombriks@gmail.com
+# IFCE - Instituto Federal de Educação, Ciência e Tecnologia do Ceará
+# Sistemas de Tempo Real e Tolerantes a Falha 
+# Trabalho 1
+# @professor Paulo Regis
+# @author Leonardo Silveira <sombriks@gmail.com>
 #
 # para compilar chamar make all na linha de comando
 # espera-se gcc, make e um sistema unix-compatible pra dar certo compilar
+#
 # a ordem das mensagens de debug não necessariamente representa a ordem das
 # coisas, mas ela varia de uma execução para outra, evidenciando a natureza
 # concorrente das threads
 # o exercício não usa mutexes porque, lendo com cuidado o enunciado, não foi
 # pedido
-#
 ##############################################################################
 
 CFLAGS=-Wall

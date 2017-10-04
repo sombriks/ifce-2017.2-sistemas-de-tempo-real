@@ -4,7 +4,7 @@
 #include <pthread.h>
 #include <string.h>
 
-// function prototypes
+// types
 
 struct par {
   char array[30];
@@ -12,6 +12,8 @@ struct par {
 };
 
 typedef struct par par_t;
+
+// function prototypes
 
 void *threadA(void*);
 
