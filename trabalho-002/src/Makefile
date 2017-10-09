@@ -4,10 +4,10 @@
 # Sistemas de Tempo Real e Tolerantes a Falha 
 # Trabalho 2
 # @professor Paulo Regis
-# @author Leonardo Silveira <sombriks@gmail.com>
+# @author Leonardo Silveira <sombriks@gmail.com> 
 #
-# para compilar chamar make all na linha de comando
-# espera-se gcc, make e um sistema unix-compatible pra dar certo compilar
+# para compilar, chamar make all na linha de comando
+# espera-se gcc, make e um sistema 'unix-compatible' 
 #
 # neste trabalho temos uso de mutexes porque o índice atual do vetor é
 # região crítica pertencente ao contexto de todas as 5 threads. a sexta

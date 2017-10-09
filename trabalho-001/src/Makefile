@@ -6,8 +6,8 @@
 # @professor Paulo Regis
 # @author Leonardo Silveira <sombriks@gmail.com>
 #
-# para compilar chamar make all na linha de comando
-# espera-se gcc, make e um sistema unix-compatible pra dar certo compilar
+# para compilar, chamar make all na linha de comando
+# espera-se gcc, make e um sistema 'unix-compatible' 
 #
 # a ordem das mensagens de debug não necessariamente representa a ordem das
 # coisas, mas ela varia de uma execução para outra, evidenciando a natureza
