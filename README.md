@@ -11,3 +11,9 @@
 
 - [exercicio-002](exercicio-002/src/Makefile)
 - [exercicio-003](exercicio-003/src/Makefile)
+
+## Laboratórios
+
+- [laboratorio-003](laboratorio-003/src/Makefile)
+
+
