@@ -10,9 +10,7 @@
 # espera-se gcc, make e um sistema 'unix-compatible' 
 #
 # o exercício visa praticar o conceito de canais com envio síncrono para
-# criar um programa 'N-versão'. pretende ainda exercitar a criação de 
-# subprocessos em vez de threads, que foi a abordagem negligenciada nos
-# exercícios anteriores.
+# criar um programa 'N-versão'. 
 #
 ##############################################################################
 
