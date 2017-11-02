@@ -3,14 +3,21 @@
 # IFCE - Instituto Federal de Educação, Ciência e Tecnologia do Ceará
 # Sistemas de Tempo Real e Tolerantes a Falha 
 # Exercício 3
+#
 # @professor Paulo Regis
 # @author Leonardo Silveira <sombriks@gmail.com>
 #
-# para compilar, chamar make all na linha de comando
-# espera-se gcc, make e um sistema 'unix-compatible' 
+# Para compilar, chamar make all na linha de comando espera-se encontrar
+# gcc, make e um sistema 'unix-compatible' 
 #
-# o exercício visa praticar o conceito de canais com envio síncrono para
-# criar um programa 'N-versão'. 
+# O exercício visa praticar o conceito de canais com envio síncrono para
+# criar um programa 'N-versão'.
+#
+# De vez em quando o print falha, mas é inerente a como o console 
+# se comporta diante de escrita concorrente mesmo.
+# 
+# Por fim, o programa tem a característica de ficar preso em loop infinito,
+# mas como não é pedido solução alguma para isso não vamos nem mexer. 
 #
 ##############################################################################
 
