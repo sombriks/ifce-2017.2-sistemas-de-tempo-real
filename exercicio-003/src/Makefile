@@ -19,6 +19,8 @@
 # Por fim, o programa tem a característica de ficar preso em loop infinito,
 # mas como não é pedido solução alguma para isso não vamos nem mexer. 
 #
+# Maiores detalhes em ../20171009_162010.jpg
+#
 ##############################################################################
 
 CFLAGS=-Wall
