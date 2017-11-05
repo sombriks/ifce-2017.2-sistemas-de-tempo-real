@@ -12,6 +12,9 @@
 #
 # vide ../README.md para resumo do exercício
 #
+# a implementação foi montada para eventualmente falhar, pois se dois 
+# feedbacks derem 1, só vai ter uma thread no ring e aí ela fica em um
+# estado de live lock.
 #
 ##############################################################################
 

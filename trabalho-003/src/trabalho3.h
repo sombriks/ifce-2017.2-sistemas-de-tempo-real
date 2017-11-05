@@ -10,6 +10,7 @@
 // http://www.csc.villanova.edu/~mdamian/threads/posixsem.html
 
  typedef struct {
+   int chin;
    int chmain;
    int chaux;
    int starter;
@@ -18,6 +19,8 @@
 int duplex[2][3];
 
 void *th(void *);
+int mkmsg();
 
+void send_async(int, int, int);
 void send_sync(int, int, int);
 void receive(int, int, int *);
