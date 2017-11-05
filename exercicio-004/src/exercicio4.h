@@ -10,12 +10,15 @@
 // http://www.skrenta.com/rt/man/pthread_mutex_init.3.html
 // http://www.csc.villanova.edu/~mdamian/threads/posixsem.html
 
-sem_t sem;
+sem_t resource, mutex;
 
 typedef struct {
-  int howmany;
-} parameter;
+  int num;
+  int id;
+} parameter_t;
 
 void *th(void *);
 
+void ex_wait(int);
+void ex_signal(int);
 

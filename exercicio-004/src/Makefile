@@ -12,11 +12,13 @@
 #
 # vide ../README.md para resumo do exercício
 #
+# mais uma vez os printf's concorrentes disparam deadlocks ocasionais.
+#
 ##############################################################################
 
 CFLAGS=-Wall
 LDFLAGS=-Wall
-LIBS=-lpthread -lm
+LIBS=-lpthread -lm -lrt
 
 exercicio4: main.o exercicio4.o 
 	gcc $(LDFLAGS) exercicio4.o main.o $(LIBS) -o exercicio4
