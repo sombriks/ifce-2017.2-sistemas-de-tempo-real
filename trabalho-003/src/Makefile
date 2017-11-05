@@ -12,7 +12,6 @@
 #
 # vide ../README.md para resumo do exercício
 #
-# mais uma vez os printf's concorrentes disparam deadlocks ocasionais.
 #
 ##############################################################################
 
@@ -20,14 +19,14 @@ CFLAGS=-Wall
 LDFLAGS=-Wall
 LIBS=-lpthread -lm -lrt
 
-exercicio4: main.o exercicio4.o 
-	gcc $(LDFLAGS) exercicio4.o main.o $(LIBS) -o exercicio4
+trabalho3: main.o trabalho3.o 
+	gcc $(LDFLAGS) trabalho3.o main.o $(LIBS) -o trabalho3
 
-main.o: main.c exercicio4.c exercicio4.h 
+main.o: main.c trabalho3.c trabalho3.h 
 	gcc $(CFLAGS) -c main.c
-	gcc $(CFLAGS) -c exercicio4.c
+	gcc $(CFLAGS) -c trabalho3.c
 
-all: exercicio4
+all: trabalho3
 
 clean: all
-	rm -f exercicio4 *.o
+	rm -f trabalho3 *.o

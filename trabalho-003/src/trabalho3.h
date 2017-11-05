@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <pthread.h>
+
+// https://support.sas.com/documentation/onlinedoc/sasc/doc700/html/lr2/zid-7440.htm
+// http://www.skrenta.com/rt/man/pthread_mutex_init.3.html
+// http://www.csc.villanova.edu/~mdamian/threads/posixsem.html
+
+ typedef struct {
+   int chmain;
+   int chaux;
+ } pchannels_t;
+
+ int duplex[2][3];
+
+ void *th(void *);
