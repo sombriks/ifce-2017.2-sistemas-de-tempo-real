@@ -17,14 +17,14 @@ CFLAGS=-Wall
 LDFLAGS=-Wall
 LIBS=-lpthread -lm
 
+all: laboratorio3
+
 main.o: main.c laboratorio3.c laboratorio3.h 
 	gcc $(CFLAGS) -c main.c
 	gcc $(CFLAGS) -c laboratorio3.c
 
 laboratorio3: main.o laboratorio3.o 
 	gcc $(LDFLAGS) laboratorio3.o main.o $(LIBS) -o laboratorio3
-
-all: laboratorio3
 
 clean: all
 	rm -f laboratorio3 *.o

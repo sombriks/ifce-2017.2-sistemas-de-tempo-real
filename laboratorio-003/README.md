@@ -6,8 +6,8 @@ A(), B(), C(), D() devem "periodicamente" enviar as
 mensagens 10, 20, 30 e 40, respectivamente, para o
 gerenciador de mensagens, através dos seus 
 respectivos canais, 0, 1, 2 e 3. O gerenciador de 
-mensagens possui um vetor local de 12 elementos do 
-tipo inteiro para armazenar as mensagens recebidas 
+mensagens possui um vetor **local** de 12 elementos 
+do tipo inteiro para armazenar as mensagens recebidas 
 das threads. Quando o vetor estiver preenchido, o 
 gerenciador deverá pegar cada mensagem do seu 
 vetor, extrair o identificador da thread destino e 
