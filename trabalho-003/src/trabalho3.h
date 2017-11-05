@@ -12,8 +12,12 @@
  typedef struct {
    int chmain;
    int chaux;
+   int starter;
  } pchannels_t;
 
- int duplex[2][3];
+int duplex[2][3];
 
- void *th(void *);
+void *th(void *);
+
+void send_sync(int, int, int);
+void receive(int, int, int *);
