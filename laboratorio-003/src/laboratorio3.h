@@ -9,20 +9,32 @@
 // http://www.skrenta.com/rt/man/pthread_mutex_init.3.html
 // http://www.csc.villanova.edu/~mdamian/threads/posixsem.html
 
-int channel[5];// = {-1, -1, -1, -1, -1};
+int channel[5];  // = {-1, -1, -1, -1, -1};
 
 typedef struct {
   int destination;
   int value;
-} param_t;
+} param_sender_t;
 
-void param_init(param_t*,int,int);
+typedef struct {
+  int channel;
+} param_receiver_t;
+
+void param_init(param_sender_t *, int, int);
+
+void showbits(unsigned short);
+
+unsigned short encodebits(int, int);
+
+void decodebits(unsigned short, int *, int *);
 
 void *sender(void *);
 
 void *receiver(void *);
 
 void *manager(void *);
+
+void post_message(unsigned short); 
 
 void send_sync(int, int);
 

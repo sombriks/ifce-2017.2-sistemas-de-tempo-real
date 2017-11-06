@@ -7,7 +7,8 @@ int main(int argc, char **argv) {
   int i = 5;
   while (i--) channel[i] = -1;
 
-  param_t pa, pb, pc, pd;
+  param_sender_t pa, pb, pc, pd;
+  param_receiver_t pe, pf, pg, ph;
   pthread_t ta, tb, tc, td, te, tf, tg, th, tmanager;
 
   param_init(&pa, 1, 10);
@@ -15,15 +16,20 @@ int main(int argc, char **argv) {
   param_init(&pc, 3, 30);
   param_init(&pd, 4, 40);
 
+  pe.channel = 1;
+  pf.channel = 2;
+  pg.channel = 3;
+  ph.channel = 4;
+
   pthread_create(&ta, NULL, sender, &pa);
   pthread_create(&tb, NULL, sender, &pb);
   pthread_create(&tc, NULL, sender, &pc);
   pthread_create(&td, NULL, sender, &pd);
 
-  pthread_create(&te, NULL, receiver, NULL);
-  pthread_create(&tf, NULL, receiver, NULL);
-  pthread_create(&tg, NULL, receiver, NULL);
-  pthread_create(&th, NULL, receiver, NULL);
+  pthread_create(&te, NULL, receiver, &pe);
+  pthread_create(&tf, NULL, receiver, &pf);
+  pthread_create(&tg, NULL, receiver, &pg);
+  pthread_create(&th, NULL, receiver, &ph);
 
   pthread_create(&tmanager, NULL, manager, NULL);
 
